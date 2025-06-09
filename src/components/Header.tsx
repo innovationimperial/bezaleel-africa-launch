@@ -70,12 +70,15 @@ export const Header = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
+            <Link to="/gallery" className="text-foreground hover:text-primary transition-colors">
+              Gallery
+            </Link>
             <a href="#pricing" className="text-foreground hover:text-primary transition-colors">
               Pricing
             </a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-colors">
+            <Link to="/contact" className="text-foreground hover:text-primary transition-colors">
               Contact
-            </a>
+            </Link>
           </nav>
 
           {/* CTA Button */}
@@ -119,12 +122,15 @@ export const Header = () => {
               <Link to="/technology" className="text-foreground hover:text-primary transition-colors">
                 Technology Services
               </Link>
+              <Link to="/gallery" className="text-foreground hover:text-primary transition-colors">
+                Gallery
+              </Link>
               <a href="#pricing" className="text-foreground hover:text-primary transition-colors">
                 Pricing
               </a>
-              <a href="#contact" className="text-foreground hover:text-primary transition-colors">
+              <Link to="/contact" className="text-foreground hover:text-primary transition-colors">
                 Contact
-              </a>
+              </Link>
               <Button className="bg-primary hover:bg-primary/90 w-fit">
                 Get Started
               </Button>
