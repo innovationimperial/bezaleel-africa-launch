@@ -19,11 +19,10 @@ export const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img 
-              src="/lovable-uploads/6a24583a-2c39-45e4-bc66-16b964d0e499.png" 
-              alt="Bezaleel Consultants" 
-              className="h-8 w-auto"
-            />
+            <div className="w-8 h-8 bg-primary rounded flex items-center justify-center">
+              <span className="text-white font-bold text-sm">B</span>
+            </div>
+            <span className="font-bold text-xl">Bezaleel Consultants</span>
           </Link>
 
           {/* Desktop Navigation */}
