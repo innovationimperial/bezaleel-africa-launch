@@ -1,53 +1,52 @@
 
-import { Building2, CreditCard, FileText, Globe, ShoppingCart, Calculator, Users, Shield } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const Services = () => {
   const services = [
     {
-      icon: Building2,
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop",
       title: "Company Registration",
-      description: "Complete business registration in South Africa, Zambia, and Zimbabwe",
+      description: "Complete business registration in South Africa and Zambia",
       features: ["Certificate of Incorporation", "Tax Registration", "CIPC/Registrar Filing"]
     },
     {
-      icon: CreditCard,
+      image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=400&h=300&fit=crop",
       title: "Corporate Banking",
-      description: "Open corporate bank accounts with major banks in all three countries",
+      description: "Open corporate bank accounts with major banks in both countries",
       features: ["FNB, Standard Bank", "Online Banking Setup", "Multi-currency Accounts"]
     },
     {
-      icon: Calculator,
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop",
       title: "Tax & Accounting",
       description: "Complete tax registration and ongoing accounting compliance",
       features: ["VAT Registration", "PAYE Setup", "Monthly Returns"]
     },
     {
-      icon: Globe,
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop",
       title: "Website Development",
       description: "Professional websites and e-commerce stores for your business",
       features: ["Custom Design", "Mobile Responsive", "SEO Optimized"]
     },
     {
-      icon: ShoppingCart,
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop",
       title: "E-Commerce Stores",
       description: "Full-featured online stores with payment processing",
       features: ["Payment Gateway", "Inventory Management", "Order Tracking"]
     },
     {
-      icon: FileText,
+      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=300&fit=crop",
       title: "Annual Compliance",
       description: "Ongoing compliance and annual return filings",
       features: ["Annual Returns", "CIPC Filings", "Compliance Monitoring"]
     },
     {
-      icon: Users,
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
       title: "Public Officer",
       description: "Professional public officer appointment services",
       features: ["Qualified Officers", "Legal Compliance", "Ongoing Support"]
     },
     {
-      icon: Shield,
+      image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=300&fit=crop",
       title: "Legal Support",
       description: "Ongoing legal and regulatory support for your business",
       features: ["Contract Review", "Regulatory Advice", "Legal Documentation"]
@@ -70,12 +69,18 @@ export const Services = () => {
           {services.map((service, index) => (
             <Card 
               key={index} 
-              className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-border/50 hover:border-primary/20"
+              className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-border/50 hover:border-primary/20 overflow-hidden"
             >
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={service.image} 
+                  alt={service.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              </div>
+              
               <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <service.icon className="w-6 h-6 text-primary" />
-                </div>
                 <CardTitle className="text-lg">{service.title}</CardTitle>
                 <CardDescription>{service.description}</CardDescription>
               </CardHeader>
