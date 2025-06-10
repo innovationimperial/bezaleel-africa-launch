@@ -64,9 +64,6 @@ export const Header = () => {
                 <DropdownMenuItem asChild>
                   <Link to="/registration/zambia" className="w-full">🇿🇲 Zambia</Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/registration/zimbabwe" className="w-full">🇿🇼 Zimbabwe</Link>
-                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
 
@@ -115,9 +112,6 @@ export const Header = () => {
               </Link>
               <Link to="/registration/zambia" className="text-foreground hover:text-primary transition-colors pl-4">
                 🇿🇲 Zambia
-              </Link>
-              <Link to="/registration/zimbabwe" className="text-foreground hover:text-primary transition-colors pl-4">
-                🇿🇼 Zimbabwe
               </Link>
               <Link to="/technology" className="text-foreground hover:text-primary transition-colors">
                 Technology Services

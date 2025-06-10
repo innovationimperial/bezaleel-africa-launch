@@ -41,24 +41,6 @@ export const CountrySelector = () => {
         "Business license",
         "Work permit assistance"
       ]
-    },
-    "zimbabwe": {
-      name: "🇿🇼 Zimbabwe",
-      flag: "🇿🇼",
-      requirements: [
-        "Valid passport",
-        "Proof of residential address",
-        "Company name search",
-        "Memorandum & Articles"
-      ],
-      timeline: "10-14 business days",
-      bankingPartners: ["Standard Chartered", "Barclays", "CBZ Bank"],
-      features: [
-        "ZIMRA registration",
-        "Company registration certificate",
-        "Tax compliance",
-        "Import/export licenses"
-      ]
     }
   };
 
@@ -70,21 +52,18 @@ export const CountrySelector = () => {
             Choose Your Country
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We specialize in company registration across three African countries. 
+            We specialize in company registration across two African countries. 
             Select your preferred jurisdiction to see specific requirements.
           </p>
         </div>
 
         <Tabs defaultValue="south-africa" className="max-w-6xl mx-auto">
-          <TabsList className="grid w-full grid-cols-3 mb-8">
+          <TabsList className="grid w-full grid-cols-2 mb-8 max-w-md mx-auto">
             <TabsTrigger value="south-africa" className="text-sm md:text-base">
               🇿🇦 South Africa
             </TabsTrigger>
             <TabsTrigger value="zambia" className="text-sm md:text-base">
               🇿🇲 Zambia
-            </TabsTrigger>
-            <TabsTrigger value="zimbabwe" className="text-sm md:text-base">
-              🇿🇼 Zimbabwe
             </TabsTrigger>
           </TabsList>
 

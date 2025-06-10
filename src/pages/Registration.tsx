@@ -28,16 +28,6 @@ const Registration = () => {
       link: "/registration/zambia",
       features: ["Limited Company", "PACRA Registration", "Tax Clearance", "Business License"],
       description: "Establish your business in this resource-rich nation"
-    },
-    {
-      name: "Zimbabwe",
-      flag: "🇿🇼", 
-      timeline: "10-14 business days",
-      price: "From $520",
-      image: "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=600&h=400&fit=crop",
-      link: "/registration/zimbabwe",
-      features: ["Private Company", "ZIMRA Registration", "Company Certificate", "Tax Compliance"],
-      description: "Access opportunities in this emerging market"
     }
   ];
 
@@ -54,7 +44,7 @@ const Registration = () => {
               Company <span className="text-gradient">Registration</span> Services
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Professional company registration across three African countries. Choose your jurisdiction and let us handle the rest.
+              Professional company registration across two African countries. Choose your jurisdiction and let us handle the rest.
             </p>
           </div>
         </div>
@@ -72,7 +62,7 @@ const Registration = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {countries.map((country, index) => (
               <Card 
                 key={index}

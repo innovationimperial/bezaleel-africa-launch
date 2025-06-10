@@ -10,7 +10,6 @@ import Services from "./pages/Services";
 import Registration from "./pages/Registration";
 import SouthAfricaRegistration from "./pages/SouthAfricaRegistration";
 import ZambiaRegistration from "./pages/ZambiaRegistration";
-import ZimbabweRegistration from "./pages/ZimbabweRegistration";
 import TechnologyServices from "./pages/TechnologyServices";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
@@ -29,7 +28,6 @@ const App = () => (
           <Route path="/registration" element={<Registration />} />
           <Route path="/registration/south-africa" element={<SouthAfricaRegistration />} />
           <Route path="/registration/zambia" element={<ZambiaRegistration />} />
-          <Route path="/registration/zimbabwe" element={<ZimbabweRegistration />} />
           <Route path="/technology" element={<TechnologyServices />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
